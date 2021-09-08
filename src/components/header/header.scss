@@ -1,0 +1,65 @@
+.header {
+  height: 6rem;
+  background-color: #9069da;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+  align-items: center;
+
+  &____nav:focus-visible {
+    outline: 0;
+  }
+
+  .logo{
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin: 0;
+    padding: 0;
+    width: 115%;
+    text-align: center;
+  }
+  &__register,
+  .title {
+    background-color: white;
+    color: #9069da;
+  }
+  &__register {
+    font-size: 1.4rem;
+    padding: 1% 1.4%;
+    border-radius: 14%;
+    font-weight: 600;
+    border: none;
+  }
+  &__nav {
+    font-size: 1.4rem;
+    width: 9rem;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+  }
+  .active {
+    border-bottom: 2px solid white;
+  }
+  .user__img {
+    background-image: url(../../assets/avatar.png);
+    width: 15%;
+    height: 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: contain;
+    display: none;
+    background-position: left;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .start_game {
+    background: white;
+    color: #9069da;
+    font-size: 1.4rem;
+    border: none;
+    padding: 3% 15%;
+    border-radius: 25%;
+  }
+}

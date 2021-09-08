@@ -1,0 +1,13 @@
+html {
+  font-size: 20px;
+}
+body {
+  background: thistle;
+  color: white;
+  margin: 0;
+}
+
+:root {
+  --card-flex: 1 1 calc(100% / 5);
+  --card-size: 6.5rem;
+}

@@ -1,0 +1,69 @@
+.popup {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(18, 87, 91, 0.7);
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: auto;
+  margin: 0 auto;
+
+  &__form {
+    width: 40%;
+    display: flex;
+    margin: 10% auto;
+    justify-content: space-evenly;
+    background-color: #9069da;
+    padding: 3% 0;
+  }
+  .registrationForm {
+    display: flex;
+    flex-direction: column;
+  }
+  &__form__avatar {
+    background-image: url(../../assets/avatar.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: top;
+    display: flex;
+    align-items: flex-end;
+    width: inherit;
+    justify-content: space-between;
+  }
+  .names,
+  .email {
+    border: none;
+    height: 25px;
+    margin-bottom: 5%;
+  }
+  .nameField {
+    margin-bottom: 3%;
+  }
+  .names:required:invalid,
+  .email:required:invalid {
+    border: 1px solid red;
+  }
+  .names:required:valid,
+  .email:required:valid {
+    border: 2px solid green;
+  }
+  .btn {
+    background: thistle;
+    border-radius: 15%;
+    font-size: 18px;
+    line-height: 24px;
+    color: #9069da;
+    padding: 3.5% 0;
+    width: 47%;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .btn:hover {
+    transform: scale(1.1);
+  }
+}
+.hide {
+  display: none;
+}

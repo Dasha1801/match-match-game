@@ -1,0 +1,42 @@
+.register {
+  width: 60%;
+  margin: 1% 0;
+
+  &__title{
+    font-size: 2.2rem;
+    margin: 0 0 1%;
+  }
+  &__rule {
+    font-size: 1.3rem;
+    width: 55%;
+  }
+  &__step1,
+  &__step2,
+  &__step3 {
+    background-image: url(../../assets/form-register.png);
+    background-size: 25%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 200px;
+    display: flex;
+  }
+  &__number {
+    height: 17%;
+    background: #9069da;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    padding: 1% 2%;
+    margin-right: 2%;
+  }
+  &__step2 {
+    background-image: url(../../assets/register__settings.png);
+    height: 175px;
+    .step2{
+      height: 21%;
+    }
+  }
+  &__step3 {
+    background-image: url(../../assets/image-game.png);
+  }
+}
